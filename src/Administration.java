@@ -19,13 +19,13 @@ public class Administration {
         this.editorialGroups = EditorialGroup.editorialGroupsIn();
         this.countries = Countries.countriesIn();
 
-        Asocieri.booksAuthors(this.books, this.authors);
-        Asocieri.editorialGroupsBooks(this.books, this.editorialGroups);
-        Asocieri.publishingBrandsBooks(this.books, this.publishingBrands);
-        Asocieri.publishingRetailorsCountries(this.countries, this.publishingRetailers);
-        Asocieri.publishingRetailorsBooks(this.books, this.publishingRetailers);                    // apelez functiile din clasa Asocieri ca sa fac legaturile
-        Asocieri.publishingRetailorsEditorialGroups(this.editorialGroups, this.publishingRetailers);
-        Asocieri.publishingRetailorsBrands(this.publishingBrands, this.publishingRetailers);
+        Connections.booksAuthors(this.books, this.authors);
+        Connections.editorialGroupsBooks(this.books, this.editorialGroups);
+        Connections.publishingBrandsBooks(this.books, this.publishingBrands);
+        Connections.publishingRetailorsCountries(this.countries, this.publishingRetailers);
+        Connections.publishingRetailorsBooks(this.books, this.publishingRetailers);                    // apelez functiile din clasa Asocieri ca sa fac legaturile
+        Connections.publishingRetailorsEditorialGroups(this.editorialGroups, this.publishingRetailers);
+        Connections.publishingRetailorsBrands(this.publishingBrands, this.publishingRetailers);
     }
 
 
